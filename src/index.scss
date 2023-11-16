@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  @apply text-center;
+  &__header {
+    font-size: calc(10px + 2vmin);
+    @apply min-h-screen flex flex-col items-center justify-center text-white bg-[#282c34];
+  }
+  &__card {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500 text-white mx-2 p-4 rounded-lg;
+  }
+  &__logo {
+    height: 40vmin;
+    @apply pointer-events-none;
+  }
+}
